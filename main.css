@@ -1,51 +1,129 @@
+h1,
+h2 {
+  font-family: "Gilroy", sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+  margin: 0 0 90px 0;
+}
+
+h6 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 .header {
   max-width: 1900px;
   width: 100%;
-  height: 963px;
+  height: auto;
   border: 2px solid red;
   background: url(public/img/header.png) no-repeat 100% 100%;
   background-size: cover;
+  margin-bottom: 112px;
 }
 
-.header_menu {
+.header__wrap,
+.what-we-do__wrap {
+  max-width: 1700px;
+  width: 90%;
+  margin: auto;
+  border: solid 2px green;
+}
+
+.wrap__menu {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 4% 0 8% 0;
   color: #fff;
   border: 2px solid red;
+  margin-top: 5%;
 }
 
-.nav_item {
+.nav__item {
   border: 2px solid transparent;
   padding: 5px 10px;
-  margin-right: 50px;
+  margin-right: 20px;
   text-decoration: none;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
 }
 
-.menu_phone {
+.nav__item:hover {
+  border: 2px solid #fff;
+}
+
+.menu__phone {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: 22px;
 }
 
-.header_info {
+.lang__button {
   color: #fff;
-  margin-left: 5%;
+  background-color: transparent;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
 }
 
-.info_title {
-  font-size: 70px;
+.lang__button:hover,
+.lang__button:focus {
+  border: 2px solid #fff;
+}
+
+.lang__button:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+
+.wrap__info {
+  color: #fff;
+}
+
+.info__title {
+  font-size: 90px;
   margin-bottom: 5%;
 }
 
-.info_description {
-  font-size: 24px;
+.info__description {
+  font-size: 34px;
+  margin-bottom: 25%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
-.nav_item:hover {
-  border: 2px solid #fff;
+
+.header__more {
+}
+
+.more-info::after {
+  content: "";
+  border-left: 2px solid #807e7f;
+  height: 60px;
+  margin-top: 40px;
+  margin-left: -55px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.more-info {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #807e7f;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
 }
 
 /*What-we-do*/
@@ -54,18 +132,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid red;
 }
 
-.what-we-do_title {
+.what-we-do__title {
+  display: flex;
+  justify-content: center;
 }
 
-.what-we-do_content {
+.what-we-do__content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  margin-bottom: 100px;
 }
 
-.content_item {
+.content__item {
   max-width: 470px;
   border: 2px solid green;
+  margin-bottom: 60px;
+}
+
+.item__title {
+  font-weight: 400;
+  font-size: 19px;
+  margin: 30px 0 30px 0;
+}
+
+.item__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* Gazprom */
+
+.gazprom {
+  background-color: #bdcbd7;
+  height: 500px;
+}
+
+.wrap__img {
 }
