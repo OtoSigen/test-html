@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 1900px;
 }
 
 h1,
@@ -11,11 +12,9 @@ h2 {
 
 h2 {
   font-size: 48px;
-  margin: 0;
 }
 
 h6 {
-  margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -50,6 +49,7 @@ body {
   color: #fff;
   border: 2px solid red;
   margin-top: 5%;
+  margin-bottom: 12%;
 }
 
 .nav__item {
@@ -85,14 +85,8 @@ body {
   font-size: 22px;
 }
 
-.lang__button:hover,
-.lang__button:focus {
+.lang__button:hover {
   border: 2px solid #fff;
-}
-
-.lang__button:active {
-  transform: translateY(1px);
-  filter: saturate(150%);
 }
 
 .wrap__info {
@@ -184,14 +178,14 @@ body {
 }
 
 .gazprom__wrap,
-.tcs__wrap,
-.adidas__wrap {
+.tcs__wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   border: 2px solid black;
+  position: relative;
 }
 
 /*.wrap__img {*/
@@ -274,6 +268,25 @@ body {
   height: 862px;
 }
 
+.adidas__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wrap__img {
+  background: url(public/img/monitor.png) no-repeat 100% 100%;
+  background-size: contain;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+  margin-right: 5%;
+}
+
 /*All-project*/
 
 .all-project {
@@ -306,4 +319,87 @@ body {
 .all-project__button::after {
   content: url(./public/img/arrow-btn-white.png);
   margin-left: 10px;
+}
+
+/*Footer*/
+
+.footer {
+  height: auto;
+}
+
+.footer__contacts {
+  background: url(public/img/footer.png) no-repeat 100% 100%;
+  width: 100%;
+  height: 580px;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__title {
+  margin-bottom: 110px;
+}
+
+.contacts__mail {
+  font-family: "Gilroy", sans-serif;
+  font-size: 30px;
+  margin-bottom: 80px;
+  font-weight: bold;
+}
+
+.contacts__number {
+  font-family: "Gilroy", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.footer__icons {
+  height: 240px;
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  width: 74px;
+  height: 74px;
+  margin-right: 1%;
+  cursor: pointer;
+}
+
+.icons-behance {
+  background: url(public/img/Behance-icon.png) no-repeat 100% 100%;
+}
+
+.icons-behance:hover {
+  background: url(public/img/Behance-icon-hover.png);
+}
+
+.icons-dribble {
+  background: url(public/img/dribbble.png) no-repeat 100% 100%;
+}
+
+.icons-dribble:hover {
+  background: url(public/img/dribbble-hover.png);
+}
+
+.icons-vk {
+  background: url(public/img/vk.png) no-repeat 100% 100%;
+}
+
+.icons-vk:hover {
+  background: url(public/img/vk-hover.png);
+}
+
+.icons-facebook {
+  background: url(public/img/facebook.png) no-repeat 100% 100%;
+}
+
+.icons-facebook:hover {
+  background: url(public/img/facebook-hover.png);
 }
